@@ -12,8 +12,8 @@ const setFirstName = (person, name) => person.firstName = name
 const setAge = (person, age) => person.age = age
 
 const giveBirthday = (person) => {
-  if (person.age !== undefined) {
-  return person.age += 1
+  if (person.age) {
+  return person.age ++
   }
   person.age = 1
 }
@@ -23,7 +23,6 @@ const marry = (person1, person2) => {
   person2.married = true;
   person1.spouseName = getFullName(person2);
   person2.spouseName = getFullName(person1);
-  return
 }
 
 const annulment = (person1, person2) => {
@@ -31,7 +30,6 @@ const annulment = (person1, person2) => {
   person2.married = false;
   delete person1.spouseName;
   delete person2.spouseName;
-  return
 }
 
 /****************************/
