@@ -1,31 +1,21 @@
 // YOUR CODE GOES HERE!!!
 /*************************/
 
-const getFirstName = (person) => {
-  return person.firstName
-}
+const getFirstName = (person) => person.firstName
 
-const getLastName = (person) => {
-  return person.lastName
-}
+const getLastName = (person) => person.lastName
 
-const getFullName = (person) => {
-  return `${person.firstName} ${person.lastName}`
-}
+const getFullName = (person) => `${person.firstName} ${person.lastName}`
 
-const setFirstName = (person, name) => {
-  return person.firstName = name
-}
+const setFirstName = (person, name) => person.firstName = name
 
-const setAge = (person, age) => {
-  return person.age = age
-}
+const setAge = (person, age) => person.age = age
 
 const giveBirthday = (person) => {
   if (person.age !== undefined) {
   return person.age += 1
   }
-  return person.age = 1
+  person.age = 1
 }
 
 const marry = (person1, person2) => {
