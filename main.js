@@ -1,34 +1,34 @@
 // YOUR CODE GOES HERE!!!
 /*************************/
 
-function getFirstName(person){
+const getFirstName = (person) => {
   return person.firstName
 }
 
-function getLastName(person){
+const getLastName = (person) => {
   return person.lastName
 }
 
-function getFullName(person){
+const getFullName = (person) => {
   return `${person.firstName} ${person.lastName}`
 }
 
-function setFirstName(person, name){
+const setFirstName = (person, name) => {
   return person.firstName = name
 }
 
-function setAge(person, age){
+const setAge = (person, age) => {
   return person.age = age
 }
 
-function giveBirthday(person){
-  if (person.age !== undefined){
+const giveBirthday = (person) => {
+  if (person.age !== undefined) {
   return person.age += 1
   }
   return person.age = 1
 }
 
-function marry(person1, person2){
+const marry = (person1, person2) => {
   person1.married = true;
   person2.married = true;
   person1.spouseName = getFullName(person2);
@@ -36,7 +36,7 @@ function marry(person1, person2){
   return
 }
 
-function annulment(person1, person2){
+const annulment = (person1, person2) => {
   person1.married = false;
   person2.married = false;
   delete person1.spouseName;
